@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+body {
+    background-color: #BAE5EE;
+    background-image: linear-gradient(-10deg, rgb(255, 255, 255) 500px, rgba(255, 255, 255, 0) 10%);
+    /*rotate back gradient*/
+}
+
+.wrap {
+
+    border-color: #ffffff;
+}
+
+.top-menu {
+    position: relative;
+    background: #BAE5EE;
+
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+    color: #FF3A5D;
+    /*transform title center*/
+}
+
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    line-height: 80px;
+    padding: 0 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: .3s linear;
+}
+
+section {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+.form-container {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    width: 100vh;
+    padding: 50px 30px;
+    border-radius: 10px;
+    border: #EFF0F6 solid 2px;
+
+}
+
+.form-container form {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vh;
+    padding: 50px 30px;
+    border-radius: 10px;
+    border: #EFF0F6 solid 2px;
+
+}
+
+.form-container h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #FF3A5D;
+}
+
+.form-container h2 {
+    font-size: 18px;
+    color: #8A8A8A;
+    margin-bottom: 5%;
+    font-weight: 200;
+    margin-bottom: 15%;
+
+}
+
+.form-container .control {
+    display: inline;
+}
+
+#type-select {
+    margin-bottom: 10%;
+}
+
+.form-subm-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FF3A5D;
+    line-height: 22px;
+    height: 40px;
+    width: 360px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+
+.input-file-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FF3A5D;
+    line-height: 22px;
+    height: 40px;
+    width: 180px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.input-file-text {
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.input-file input[type=file] {
+    /*off original input file */
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+
+/* Hover/active */
+.input-file:hover .input-file-btn {
+    background-color: #FF012E;
+}
+
+
+
+.form-subm-button {
+    background-color: #FF3A5D;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.models button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.models button.active {
+    background-color: red;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.footer-text {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}

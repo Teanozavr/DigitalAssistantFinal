@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralWebs Model Comparison</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <nav class="top-menu">
+            <ul class="menu-main">
+                <li class="user">
+                    <a href="">Kuzmina Ksenia</a>
+                </li>
+            </ul>
+            <a class="title" href="">VideoResume</a>
+        </nav>
+    </div>
+
+    <section class="form-container">
+        <h1>VideoResume</h1>
+        <h2>Выберите видео для загрузки, чтобы получить краткий конспект видеозаписи</h2>
+        <form action="http://localhost:8000/uploadfile/" method="POST" enctype="multipart/form-data">
+            <div class="control">
+                <label class="input-file">
+                    <input type="file" name="file_upload">
+                    <span class="input-file-btn">Выберите файл</span>
+                    <span class="input-file-text">Загрузите файл формата mp4</span>
+                </label>
+            </div>
+
+            <select name="type" id="type-select">
+                <option value="">-- Выберите тип файла для получения --</option>
+                <option value="doxs">DOXS</option>
+                <option value="pdf">PDF</option>
+                <option value="pptx">PPTX</option>
+            </select>
+
+            <div class="sub-bttn">
+                <input type="submit" value="Начать обработку ->" class="form-subm-button">
+            </div>
+
+        </form>
+    </section>
+
+    <div class="footer-text">
+        Учебный проект<br>
+        Author: Kuzmina Ksenia, 2024
+    </div>
+
+    <script src="front/javascript.js"></script>
+
+</body>
+
+</html>

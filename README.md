@@ -1,2 +1,2 @@
-# DigitalAssistantFinal
-проект для маг.диссертации
+# DigitalAssistant
+проект для диссертации
